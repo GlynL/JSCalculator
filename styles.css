@@ -1,0 +1,40 @@
+html {
+    /* take up full screen */
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    /* take up full screen */
+    min-height: 100%;
+}
+
+#container {
+    background: pink;
+    width: 200px;
+    height: 200px;
+    /* centering hor/ver */
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin: -70px 0 0 -170px;
+}
+
+#input {
+    width: 100%;
+    min-height: 2em;
+    border: 1px solid black;
+    text-align: right;
+    padding: 5px 10px 5px 0;
+    box-sizing: border-box;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+#equals {
+    width: 80px;
+}
