@@ -7,34 +7,70 @@ html {
 body {
     /* take up full screen */
     min-height: 100%;
+    background-color: rgb(117, 136, 241);
+    font-family: 'Cardo', serif;
 }
 
 #container {
-    background: pink;
-    width: 200px;
-    height: 200px;
     /* centering hor/ver */
     position: absolute;
     top: 50%;
     left:50%;
-    margin: -70px 0 0 -170px;
+    margin: -94px 0 0 -100px; /* half the height and width of container */
+    border-radius: 2%;
+    padding: 0 20px 20px;
+    background-color: #DFE2DB;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.788), 0 0 10px rgba(0, 0, 0, 0.479),
+                inset 0 0 5px rgba(0, 0, 0, 0.388), inset 0 0 10px rgba(0, 0, 0, 0.179);
+    
 }
+
+/* gradients - for background of calc - https://stackoverflow.com/questions/33203148/how-to-make-a-div-box-look-3d https://jsfiddle.net/zt2x0bct/ https://www.w3schools.com/css/css3_gradients.asp */
+
+
+
+p {
+    font-size: 10px;
+    text-align: right;
+    font-style: italic;
+}
+
+.left {
+    float: left;
+    font-style: normal;
+}
+
+
 
 #input {
     width: 100%;
-    min-height: 2em;
-    border: 1px solid black;
+    min-height: 28px;
     text-align: right;
     padding: 5px 10px 5px 0;
     box-sizing: border-box;
+    background-color: rgb(244, 245, 245);
+    border-radius: 2%;
+    margin-bottom: 2px;
+
+    /* shadow */
+    -moz-box-shadow:    inset 0 0 2px #000000;
+    -webkit-box-shadow: inset 0 0 2px #000000;
+    box-shadow:         inset 0 0 2px #000000;
 }
 
 button {
     width: 40px;
     height: 40px;
     float: left;
+    background: #585858;
+    color: white;
+    border-color: rgb(182, 173, 173);
+    outline: none;/* removes outline when clicked */
+    border-radius: 20%;
+    margin: 1px 1px 0 0;
 }
 
-#equals {
+.wide {
     width: 80px;
 }
+
